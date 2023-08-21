@@ -2,33 +2,77 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const taskSchema = new Schema({
-  name: {
+
+
+  brandname: {
     type: String,
-    required: true,
+    required: false,
   },
-  assignee: {
+  websitetype: {
     type: String,
-    required: true,
+    required: false,
   },
-  date: {
+  refrance: {
     type: String,
-    required: true,
+    required: false,
   },
-  time: {
+  Branddescription: {
     type: String,
-    required: true,
+    required: false,
   },
-  duedate: {
+  numberofpages: {
     type: String,
-    required: true,
+    required: false,
   },
-  duetime: {
+  servicefeature1: {
     type: String,
-    required: true,
+    required: false,
   },
-  completed: {
-    type: Boolean,
-    default: false,
+  servicefeature2: {
+    type: String,
+    required: false,
   },
+  servicefeature3: {
+    type: String,
+    required: false,
+  },
+  Dycompanybriefly: {
+    type: String,
+    required: false,
+  },
+  WebsitesUnderDomain: {
+    type: String,
+    required: false,
+  },
+  domianname: {
+    type: String,
+    required: false,
+  },
+  additionalreq: {
+    type: String,
+    required: false,
+  },
+  hasDomain: {
+    type: String,
+    required: false,
+  },
+  needHosting: {
+    type: String,
+    required: false,
+  },
+  needLogo: {
+    type: String,
+    required: false,
+  },
+  needContent: {
+    type: String,
+    required: false,
+  },
+  needImages: {
+    type: String,
+    required: false,
+  },
+
+
 });
-module.exports = mongoose.model("task", taskSchema);
+module.exports = mongoose.model("webform", taskSchema);

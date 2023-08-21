@@ -7,7 +7,7 @@ module.exports = async () => {
       useUnifiedTopology: true,
     };
     await mongoose.connect(
-      "mongodb+srv://mohammadikram20001:Pakstar123@cluster0.yloaacd.mongodb.net/test",
+      "mongodb+srv://mohammadikram20001:Pakstar123@cluster0.yloaacd.mongodb.net/webform",
       connectionParams
     );
     console.log("Connected to database");
